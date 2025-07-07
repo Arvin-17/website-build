@@ -21,15 +21,21 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.navbar .logo {
+.logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.navbar nav a {
-  margin: 0 1rem;
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav a {
   text-decoration: none;
   color: var(--blue);
   font-weight: 500;
@@ -42,39 +48,38 @@ header {
   font-weight: bold;
   cursor: pointer;
   border-radius: 5px;
-  transition: transform 0.3s ease;
 }
 
 .give-btn:hover {
   transform: scale(1.1);
 }
 
-/* HERO SECTION */
 .hero {
   display: flex;
   flex-wrap: wrap;
-  min-height: calc(100vh - 100px);
   align-items: center;
-  justify-content: center;
-  padding: 3rem 2rem;
+  justify-content: space-between;
+  padding: 3rem 5%;
   gap: 2rem;
 }
 
 .hero-text {
-  flex: 1 1 400px;
+  flex: 1 1 450px;
   max-width: 600px;
-  text-align: center;
 }
 
 .hero-text h1 {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 1.5rem;
+  font-weight: 700;
 }
 
 .hero-text p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
   margin-bottom: 2rem;
+  font-weight: 400;
 }
 
 .ripple-btn {
@@ -85,7 +90,6 @@ header {
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .ripple-btn:hover {
@@ -98,11 +102,10 @@ header {
   background-image: url('https://cdn2.dropmarkusercontent.com/52043/0024fd95f07bd1de043a400c6a5f9ee023ae6f9c805f31249d407784bea7a18a/Zimbabwe_2022_CG-8639.jpg?Expires=1751856001&Signature=H6rDj6RKMWFHjJX3V3VADpYYz~ZJMfDi2jvNzfqGW4USQhF97trOesw1PCthK72ZpDBkJ2Yod0GyPu4rCxmGn-jjOxjTg9akkLF88AnjXuOUaEcmKPN09PQ1JUmOn9Jgz1jNmiFNRPDRWF0VVxcjIvzDcwAjgNd-F3YVI-uxMff6EyqMjAiX9ssRSYXoz~2KJe1WAC71Cy-0OcLZwIpia~6nRxkjwApkaM3NniQpOmc5QfbUW1q0Cg9xNcLaCorGzhMdsFVGK3bN46iYcWAOIq4tjJm3HN7gAQHqWecF4on-ZmIpDVS78x5p6Gk-3nklr7Gq2eCqm5kTD0051wzNzA__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ');
   background-size: cover;
   background-position: center;
-  height: 500px;
+  aspect-ratio: 4 / 3;
   border-radius: 12px;
 }
 
-/* Thank You animation */
 .thank-you {
   position: fixed;
   bottom: -100px;
@@ -115,7 +118,6 @@ header {
   font-weight: bold;
   font-size: 1.2rem;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   opacity: 0;
   transition: all 0.8s ease;
   z-index: 999;
@@ -137,19 +139,20 @@ header {
   .hero {
     flex-direction: column;
     padding: 2rem 1rem;
-  }
-
-  .hero-img {
-    width: 100%;
-    height: 300px;
+    text-align: center;
   }
 
   .hero-text h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .hero-text p {
     font-size: 1.1rem;
+  }
+
+  .hero-img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
   }
 
   .ripple-btn {
@@ -162,6 +165,6 @@ header {
 
   .navbar {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 }

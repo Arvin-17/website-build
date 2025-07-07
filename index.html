@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <header>
     <div class="navbar">
       <div class="logo">💧 charity: water</div>
@@ -35,12 +36,13 @@
 
   <script>
     function showThankYou() {
-      const msg = document.getElementById("thankYouMsg");
+      var msg = document.getElementById("thankYouMsg");
       msg.classList.add("visible");
-      setTimeout(() => {
+      setTimeout(function () {
         msg.classList.remove("visible");
       }, 4000);
     }
   </script>
+
 </body>
-</ht
+</html>
