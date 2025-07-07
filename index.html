@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charity Water - Ripple Effect</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">💧 charity: water</div>
+      <nav>
+        <a href="#">Why Water</a>
+        <a href="#">About Us</a>
+        <a href="#">Sign In</a>
+        <button class="give-btn">Give 💧</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>$10. One Click.<br>Clean Water for a Lifetime.</h1>
+      <p>Every dollar you give goes straight to the field, real people, real impact, and receipts to prove it.</p>
+      <button class="ripple-btn" onclick="showThankYou()">Start Your Ripple Effect 💧</button>
+    </div>
+    <div class="hero-img"></div>
+  </section>
+
+  <div class="thank-you" id="thankYouMsg">
+    <p>It starts with one drop.<br><span>Thank you for making waves.</span></p>
+  </div>
+
+  <script>
+    function showThankYou() {
+      const msg = document.getElementById("thankYouMsg");
+      msg.classList.add("visible");
+      setTimeout(() => {
+        msg.classList.remove("visible");
+      }, 4000);
+    }
+  </script>
+</body>
+</html>
