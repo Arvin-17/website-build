@@ -97,10 +97,20 @@ nav a {
   transform: scale(1.05);
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--blue);
+  text-decoration: none;
+}
 .logo img {
-  height: 40px;
+  height: 36px;
   object-fit: contain;
 }
+
 
 .hero-img {
   flex: 1 1 50%;
